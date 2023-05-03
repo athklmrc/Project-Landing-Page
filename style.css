@@ -1,42 +1,44 @@
-* {
-    border: 1px solid red;
-  }
-
 
 body {
+    font-family: 'Roboto', sans-serif ;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: auto;
-    width: 100%;
+    width: auto;
+}
+
+.header , .sec1 , .sec2 , .sec3 , .sec4 , .footer {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    flex: 0 1 1000px;
+    margin: 60px;
 }
 
 .header {
-    display: flex;
-    flex-grow: 1;
     align-items: center;
     background-color: #1F2937;
     color: white;
-    width: auto;
     padding: 16px;
 }
 .header ul {
-    margin-left: auto;
+    margin-left: 300px;
 }
-
 .header h2 {
-    font-size: small;
-
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
-.sec1  , .sec3 , .sec4 {
-    display: flex;
-
-}
+/* SECTION1 */
 .sec1 {
     background-color: #1F2937;
-    color: white;
+    color: #E5E7EB;
+}
+.sec1 .container {
+    display: flex;
+    gap: 30px;
 }
 .sec1-img { 
     background-color: gray;
@@ -47,38 +49,62 @@ body {
     background-color: #3882F6;
     color: white;
     font-weight: bold;
-    padding: 4px 12px;
-    border-radius: 20%;
+    padding: 4px 16px;
+    border-radius: 5px;
 }
 
+/* Blue Boxes Informations */
 .sec2 .grid {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    
+    gap: 50px;
 }
 .sec2 h1 {
     text-align: center;
 }
-
-.box {
+.sec2 .item { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    gap: 10px;
+}
+.sec2 .box {
     border: 2px solid blue;
-    border-radius: 10%;
-    height: 80px;
-    width: 90px;
+    border-radius: 5px;
+    height: 120px;
+    width: 120px;
 }
 
+/* QUOTE */
 .sec3 {
     background-color: #E5E7EB;
     color: #1F2937;
+}
+.sec3 .quote {
+    font-family: 'Roboto Light', sans-serif ;
     font-size: 36px;
+    font-style: italic;
+}
+.sec3 .author {
+    text-align: end;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-
-.sec4 {
-    background-color: #3882F6;
+/* CALL TO ACTION */
+.sec4 .container {
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3882F6;
+    padding: 40px;
+    border-radius: 5px;
+}
+.sec4-right {
+    margin-left: 80px;
 }
 .sec4 button {
     color: white;
@@ -96,15 +122,18 @@ ul {
     margin: 0;
     padding: 0;
     gap: 16px;
-  }
+}
 
-  a {
+a {
     text-decoration: none;
     color: rgb(175, 175, 175);
-  }
+}
 
 
 .footer {
     background-color: #1F2937;
     color: white;
+    height: 60px;
+    align-items: center;
 }
+
